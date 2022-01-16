@@ -7,6 +7,8 @@ Voici quelques instructions pour faire tourner le projet :
 	- Puis pour faire tourner la base de données
 		json-server --watch db.json
 	- Se placer dans le dossier Projet Cookie et exécuter la commande suivante : 
+		npm install
+	- Puis cette commade pour lancer le serveur
 		ng serve
 		
 C'est bon, le projet tourne :)
