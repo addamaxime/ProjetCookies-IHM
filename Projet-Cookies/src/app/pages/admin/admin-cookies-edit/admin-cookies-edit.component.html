@@ -1,0 +1,21 @@
+<div class="bloc_maj">
+    <h1 style="text-align: center;">Mettre à jour un cookie </h1>
+
+<form [formGroup]="editCookie" (ngSubmit)="launchUpdate()">
+    <div class="container">
+        <mat-form-field>
+        <input matInput placeholder="Entrer un nom" formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Entrer une recette" formControlName="recette">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="number" placeholder="Entrer un prix" formControlName="prix">€
+        </mat-form-field>
+        <button type="submit" [disabled]="editCookie.invalid" class="btn btn-primary">Mettre à jour</button>
+    </div>
+
+     
+</form>

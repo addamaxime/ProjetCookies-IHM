@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: url('/assets/datas/cookies-bg.jpeg');
+    height: 105px;
+}
+
+.text-bg{
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+    font-weight: bold;
+    
+}

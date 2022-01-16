@@ -1,0 +1,45 @@
+.table img{
+    width : 50px;
+    height : 40px;
+}
+
+.table{
+    margin-top: 20px;
+}
+
+.actions{
+    display: flex;
+}
+
+.edit{
+    padding-top: 3px;
+    padding-left: 16px;
+}
+
+.btn-primary{
+    background-color: #CD853F;
+    border-color: 	#CD853F	;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btn_edit_user{
+    background-color: red!important;
+    border-color: 	red!important	;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 25px;
+}
+
+.btn_add_cookie{
+    font-size: 25px;
+}
+
+.btn_add{
+    display: flex;
+}
+

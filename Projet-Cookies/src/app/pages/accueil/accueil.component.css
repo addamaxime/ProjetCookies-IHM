@@ -1,0 +1,11 @@
+.accueil img{
+width : 600px;
+height:500px;
+border-radius: 20%;
+padding-top: 10px;
+}
+
+.accueil{
+    text-align: center;
+    padding-top: 20px;
+}

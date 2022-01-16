@@ -1,0 +1,111 @@
+{
+  "cookies": [
+    {
+      "id": 0,
+      "name": "Chocolat blanc",
+      "recette": "Chocolat blanc",
+      "prix": "3",
+      "photo": "/assets/datas/chocolat_blanc.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Chocolat coco",
+      "recette": "Chocolat et noix de coco",
+      "prix": "3",
+      "photo": "/assets/datas/chocolat_coco.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chocolat au lait",
+      "recette": "Chocolat au lait",
+      "prix": "3",
+      "photo": "/assets/datas/chocolat_lait.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chocolat au lait + banane",
+      "recette": "Chocolat au lait et banane",
+      "prix": "3",
+      "photo": "/assets/datas/chocolat_lait_banane.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chocolat noir",
+      "recette": "Chocolat noir",
+      "prix": "3",
+      "photo": "/assets/datas/chocolat_noir.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Chocolat noisette",
+      "recette": "Chocolat noisette",
+      "prix": "3",
+      "photo": "/assets/datas/chocolat_noisette.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Chocolat praline",
+      "recette": "Chcolat praline",
+      "prix": "3",
+      "photo": "/assets/datas/chocolat_praline.jpg"
+    }
+  ],
+  "users": [
+    {
+      "name": "Maxime",
+      "username": "maximeadda",
+      "email": "addamaxime@cy-tech.fr",
+      "password": "U2FsdGVkX1+DihoE6Ffmk8lBasMM0RV/1z1NLT4Rlrw=",
+      "passwordConfirm": "U2FsdGVkX1+DihoE6Ffmk8lBasMM0RV/1z1NLT4Rlrw=",
+      "id": 1
+    },
+    {
+      "name": "Compte Test",
+      "username": "Test",
+      "email": "test@test.fr",
+      "password": "U2FsdGVkX1/ZhyX5E82cWGQNo1n5H1F+mhlaidpIC1s=",
+      "passwordConfirm": "U2FsdGVkX1/ZhyX5E82cWGQNo1n5H1F+mhlaidpIC1s=",
+      "id": 2
+    },
+    {
+      "name": "Heloise",
+      "username": "heloise-etienne",
+      "email": "heloise@etienne.fr",
+      "password": "U2FsdGVkX1+KnfgJ3Y5xz5mo5qaYM0oA7JGsXcX4XnE=",
+      "passwordConfirm": "U2FsdGVkX1+KnfgJ3Y5xz5mo5qaYM0oA7JGsXcX4XnE=",
+      "id": 3
+    }
+  ],
+  "admin": [
+    {
+      "id": 0,
+      "name": "admin",
+      "username": "admin",
+      "email": "admin@admin.fr",
+      "password": "U2FsdGVkX19PpXq7GmDOLWVtWreuw8/rZ1SWbYpjnss=",
+      "padsswordConfirm": "U2FsdGVkX19PpXq7GmDOLWVtWreuw8/rZ1SWbYpjnss="
+    }
+  ],
+  "panier": [
+    {
+      "id": 0,
+      "id_cookie": "1",
+      "id_username": "1"
+    },
+    {
+      "id_cookie": 2,
+      "id_username": "heloise@etienne.fr",
+      "id": 1
+    },
+    {
+      "id_cookie": "2",
+      "id_username": "heloise@etienne.fr",
+      "id": 2
+    },
+    {
+      "id_cookie": "1",
+      "id_username": "heloise@etienne.fr",
+      "id": 3
+    }
+  ]
+}

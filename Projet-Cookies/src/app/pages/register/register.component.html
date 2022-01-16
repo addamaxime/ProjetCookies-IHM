@@ -1,0 +1,39 @@
+<h1 style="text-align: center; padding-top: 20px;">Page d'inscription</h1>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <div class="container">
+
+        <mat-form-field>
+            <input matInput placeholder="Nom complet" formControlName="name">
+            <mat-hint *ngIf="registerForm.get('name')?.errors">Le nom est requis</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Pseudo" formControlName="username">
+            <mat-hint *ngIf="registerForm.get('username')?.errors">Le nom d'utilisateur est requis</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-hint *ngIf="registerForm.get('email')?.errors">Le mail est requis</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="password" placeholder="Mot de passe" formControlName="password">
+            <!-- <mat-hint *ngIf="registerForm.get('password')?.errors">Le mot de passe est requis</mat-hint> -->
+            <mat-hint *ngIf="registerForm.get('password')?.hasError('passwordInvalid')">Veuillez entre un mot de passe avec au moins un chiffre.</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="password" placeholder="Confirmez votre mot de passe"
+                formControlName="passwordConfirm">
+            <mat-hint *ngIf="registerForm.hasError('passwordsMatching')">La confirmation de mot de passe est requise </mat-hint>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary" class="btn-primary" [disabled]="registerForm.invalid"
+            type="submit">S'inscrire</button>
+
+    </div>
+
+</form>

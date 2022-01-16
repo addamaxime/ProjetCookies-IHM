@@ -1,0 +1,36 @@
+<h1 style="text-align: center; padding-top: 20px;">Bienvenue chez Jacky Cookie</h1>
+
+<section>
+    <!-- <input [(ngModel)] ="filtreEtudiant" placeholder="Rechercher un étudiant" value="Filtrer les étudiants"> -->
+    <div class="d-flex justify-content-around">
+        <article *ngFor="let c of cookieServ.listeCookies | slice:page.debut:page.debut+page.ecart"> 
+            <img src={{c.photo}}>
+            <div class="cookie_infos">
+                <h3>{{c.name}} </h3>
+                <p>Prix : {{c.prix}}€</p>
+
+
+                <button (click)="changeRecetteShow(c)" class="btn btn-secondary btn-lg">{{getButtonText(c)}}</button>
+                <button *ngIf="statutServ.connexion" (click) = addCookieToPanier(c) class="btn btn-secondary btn-lg btn_panier"> Ajouter au panier</button>
+
+                <div class="recette" *ngIf="getRecetteShow(c) ; then ifBlock else elseBlock">
+                </div>
+
+                <ng-template #ifBlock>
+                    <div class="block">Ingrédients : {{c.recette}} </div>
+                </ng-template>
+
+                <ng-template #elseBlock>
+                    <div class="block_else"></div>
+                </ng-template>
+
+
+            </div>
+        </article>
+    </div>
+
+    <div class="d-flex justify-content-center pagination">
+        <button [disabled]="lockButtonBefore()" (click)="pagination(-1)" class="btn btn-primary btn-lg"> < </button>
+        <button [disabled]="lockButtonNext(cookieServ.listeCookies)" (click)="pagination(1)" class="btn btn-primary btn-lg"> > </button>
+    </div>
+</section> 

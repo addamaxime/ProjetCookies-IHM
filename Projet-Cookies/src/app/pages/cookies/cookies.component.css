@@ -1,0 +1,49 @@
+article{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 3px inset brown;
+    border-radius: 30px;
+}
+img{
+    width : 350px;
+    height : 300px;
+}
+
+.cookie_infos{
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: brown;
+    border-color : black;
+}
+
+.pagination{
+    padding-bottom: 50px;
+}
+
+.btn-secondary{
+    width: 150px;
+    font-size: 22px;
+    background-color: #894C30;
+    margin-bottom: 10px;
+}
+
+.recette{
+    margin-bottom: 30px;
+}
+
+.block{
+    margin-bottom: 30px;
+    font-size: 22px;
+
+}
+
+.block_else{
+    margin-bottom: 65px;
+}
+
+.btn_panier{
+    background-color: #E77A48!important;
+}

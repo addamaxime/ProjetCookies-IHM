@@ -1,0 +1,31 @@
+<div class="bloc_maj">
+    <h1 style="text-align: center;">Ajouter un cookie </h1>
+
+    <form [formGroup]="addCookie" (ngSubmit)="addNewCookie()">
+        <div class="container">
+            <mat-form-field>
+                <input matInput placeholder="Entrer un nom" formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Entrer une recette" formControlName="recette">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Entrer le lien d'une image" formControlName="photo">
+            </mat-form-field>
+
+            <div class="euro">
+                <mat-form-field>
+                    <input matInput type="number" placeholder="Entrer un prix" formControlName="prix">
+                </mat-form-field>
+                <span>€</span>
+            </div>
+
+            <button type="submit" [disabled]="addCookie.invalid" class="btn btn-primary add_cokie">Ajouter le
+                cookie</button>
+        </div>
+
+
+    </form>
+</div>

@@ -1,0 +1,55 @@
+<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" routerLink="">Jacky Cookie <img src="/assets/datas/cookie-menu.png"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/cookies">Nos cookies <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" *ngIf="statutServ.connexion" routerLink="/profil">Profil <span
+                            class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" *ngIf="!statutServ.connexion" routerLink="/login">Connexion <span
+                            class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" *ngIf="statutServ.connexion" (click)="authServ.logOut()"
+                        routerLink="/login">Déconnexion <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" *ngIf="!statutServ.connexion" routerLink="/register">Inscription</a>
+                </li>
+                <div>
+
+                </div>
+
+            </ul>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item float_left">
+                    <a class="nav-link" *ngIf="!statutServ.connexion" routerLink="admin">Accéder à l'administration</a>
+                </li>
+                <li class="nav-item float_left">
+                    <a class="nav-link" *ngIf="statutServ.isAdmin" routerLink="admin-cookies">Accéder à l'administration</a>
+                </li>
+                <li class="nav-item float_left">
+                    <a class="nav-link" routerLink="/panier"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Mon panier</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+</div>
+
+
+
+<div class="admin"> </div>

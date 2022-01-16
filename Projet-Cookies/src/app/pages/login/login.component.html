@@ -1,0 +1,26 @@
+<div class="bloc_connexion">
+
+    <h1 style="text-align: center;">Page de connexion</h1>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="container">
+
+            <mat-form-field class="input_champ">
+                <input matInput placeholder="Email" formControlName="email">
+                <mat-hint *ngIf="loginForm.controls?.['email']?.errors">Le mail est requis</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field class="input_champ">
+                <input matInput placeholder="Mot de passe" type="password" formControlName="password">
+                <mat-hint *ngIf="loginForm.controls?.['password']?.errors">Le mot de passe est requis</mat-hint>
+            </mat-form-field>
+
+            <button class="btn-primary btn_submit" mat-flat-button color="primary" [disabled]="!loginForm.valid"
+                type="submit">Connexion</button>
+
+
+        </div>
+
+    </form>
+
+</div>

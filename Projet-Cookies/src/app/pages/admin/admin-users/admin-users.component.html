@@ -1,0 +1,28 @@
+<div class="titre">
+    <h3>Liste des utilisateurs</h3>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Pseudo</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mot de passe</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of usersServ.listeUsers">
+            <th>{{c.name}}</th>
+            <th>{{c.username}}</th>
+            <th>{{c.email}}</th>
+            <th>{{c.password}}</th>
+            <th>
+                <div class="actions">
+                    <i (click)="deleteUser(c)" class="fa fa-trash" style="font-size:30px;color:red;"></i>
+                </div>
+            </th>
+        </tr>
+    </tbody>
+</table>

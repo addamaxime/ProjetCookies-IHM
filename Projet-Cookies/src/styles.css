@@ -1,0 +1,14 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+  font-family: 'Cookie';
+  font-size: 26px;
+}
+
+.swal2-title{
+  font-size: 50px!important;
+}
+
+.swal2-html-container{
+  font-size: 25px!important;
+}

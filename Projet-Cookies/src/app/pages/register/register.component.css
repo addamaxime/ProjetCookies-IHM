@@ -1,0 +1,21 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > * {
+    width : 40%
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #A0522D;
+    border-color: #A0522D;
+    margin-top:30px
+}
+
+.bloc_maj{
+    padding-top: 30px;
+}
