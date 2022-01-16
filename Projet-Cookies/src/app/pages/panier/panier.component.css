@@ -1,0 +1,16 @@
+.table img{
+    width : 70px;
+    height : 50px;
+}
+
+.table{
+    margin-top: 20px;
+}
+
+.btn_payer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px!important;
+}
+

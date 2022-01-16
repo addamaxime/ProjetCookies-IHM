@@ -39,6 +39,7 @@ export class AdminCookiesAddComponent implements OnInit {
     if (this.addCookie.invalid){
       return
     }
+    console.log(this.addCookie.value)
     this.cookieServ.saveCookie(this.addCookie.value).subscribe((result)=>{
     })
     Swal.fire(

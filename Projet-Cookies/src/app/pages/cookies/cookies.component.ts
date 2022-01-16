@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICookie } from 'src/app/utils/modeles/icookie';
+import { IPanier } from 'src/app/utils/modeles/ipanier';
 import { IUser } from 'src/app/utils/modeles/iuser';
 import { AuthentificationService } from 'src/app/utils/services/authentification.service';
 import { CookiesService } from 'src/app/utils/services/cookies.service';
@@ -11,6 +12,8 @@ import { UsersService } from 'src/app/utils/services/users.service';
   templateUrl: './cookies.component.html',
   styleUrls: ['./cookies.component.css']
 })
+
+
 export class CookiesComponent implements OnInit {
 
   page: any = { debut: 0, ecart: 4 };
@@ -18,6 +21,7 @@ export class CookiesComponent implements OnInit {
   filtreCookie: string = '';
   listeCookies: Array<ICookie> = [];
   user: any
+
 
 
   constructor(public cookieServ: CookiesService,
@@ -83,17 +87,26 @@ export class CookiesComponent implements OnInit {
           return a.email === this.authServ.decrypt(localStorage.getItem('loggedUser'))
         })
       })
-      return this.user
+      return this.user?.id
   }
   addCookieToPanier(cookie: ICookie) {
-    let email = this.statutServ.decrypt(localStorage?.getItem('loggedUser'))
-
-
-    let IdUserFindedWithEmail = this.getOneUserWithMail().email
-
-
-    const data = '{"id_cookie": '+'"'+cookie.id+'", "id_username": "'+IdUserFindedWithEmail+'"}'.toString()
-    //this.cookieServ.cookieToPanier(JSON.parse(data))
+    let IdUserFindedWithEmail = this.getOneUserWithMail()
+    
+    let panier:IPanier= {
+      id_cookie: Number(cookie.id),
+      name_cookie:cookie.name,
+      price_cookie:cookie.prix,
+      photo_cookie:cookie.photo,
+      id_username: Number(IdUserFindedWithEmail),
+      mail_username:this.authServ.decrypt(localStorage.getItem('loggedUser'))
+    }
+    this.cookieServ.cookieToPanier(panier).subscribe((result)=>{
+    })
   }
+
+  /*getCookiesForOneUser(){
+    let IdUserFindedWithEmail = this.getOneUserWithMail()
+    this.cookieServ.getPanierForOneUser()
+  }*/
 
 }

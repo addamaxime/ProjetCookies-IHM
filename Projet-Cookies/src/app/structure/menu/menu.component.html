@@ -40,7 +40,7 @@
                     <a class="nav-link" *ngIf="statutServ.isAdmin" routerLink="admin-cookies">Accéder à l'administration</a>
                 </li>
                 <li class="nav-item float_left">
-                    <a class="nav-link" routerLink="/panier"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <a class="nav-link" *ngIf="statutServ.connexion" routerLink="/panier"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         Mon panier</a>
                 </li>
             </ul>

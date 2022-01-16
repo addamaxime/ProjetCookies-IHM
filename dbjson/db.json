@@ -61,19 +61,11 @@
     },
     {
       "name": "Compte Test",
-      "username": "Test",
+      "username": "test",
       "email": "test@test.fr",
-      "password": "U2FsdGVkX1/ZhyX5E82cWGQNo1n5H1F+mhlaidpIC1s=",
-      "passwordConfirm": "U2FsdGVkX1/ZhyX5E82cWGQNo1n5H1F+mhlaidpIC1s=",
+      "password": "U2FsdGVkX189620yzSL70Vs0mvm+poNrlcSmrqWZU2M=",
+      "passwordConfirm": "U2FsdGVkX189620yzSL70Vs0mvm+poNrlcSmrqWZU2M=",
       "id": 2
-    },
-    {
-      "name": "Heloise",
-      "username": "heloise-etienne",
-      "email": "heloise@etienne.fr",
-      "password": "U2FsdGVkX1+KnfgJ3Y5xz5mo5qaYM0oA7JGsXcX4XnE=",
-      "passwordConfirm": "U2FsdGVkX1+KnfgJ3Y5xz5mo5qaYM0oA7JGsXcX4XnE=",
-      "id": 3
     }
   ],
   "admin": [
@@ -88,24 +80,22 @@
   ],
   "panier": [
     {
-      "id": 0,
-      "id_cookie": "1",
-      "id_username": "1"
-    },
-    {
-      "id_cookie": 2,
-      "id_username": "heloise@etienne.fr",
+      "id_cookie": 3,
+      "name_cookie": "Chocolat au lait + banane",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/chocolat_lait_banane.jpg",
+      "id_username": 4,
+      "mail_username": "aaa@aaa.fr",
       "id": 1
     },
     {
-      "id_cookie": "2",
-      "id_username": "heloise@etienne.fr",
+      "id_cookie": 3,
+      "name_cookie": "Chocolat au lait + banane",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/chocolat_lait_banane.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
       "id": 2
-    },
-    {
-      "id_cookie": "1",
-      "id_username": "heloise@etienne.fr",
-      "id": 3
     }
   ]
 }

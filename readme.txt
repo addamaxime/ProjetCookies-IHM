@@ -18,7 +18,7 @@ Données :
 
 Compte utilisateur normal : 
 email : test@test.fr
-mdp : abcd1234
+mdp : abc123
 
 
 Compte admin : 

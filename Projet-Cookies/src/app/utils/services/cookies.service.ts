@@ -3,6 +3,7 @@ import { ICookie } from '../modeles/icookie';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 import { IUser } from '../modeles/iuser';
+import { IPanier } from '../modeles/ipanier';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +11,11 @@ import { IUser } from '../modeles/iuser';
 export class CookiesService {
 
   listeCookies: Array<ICookie> = [];
+  listePaniers: Array<IPanier> = [];
 
   constructor(private http: HttpClient) {
     this.getCookies();
+    this.getPanier()
   }
 
   getCookies() {
@@ -39,10 +42,15 @@ export class CookiesService {
     return this.http.post("http://localhost:3000/cookies", data)
   }
 
-  cookieToPanier(data:any){
-    return this.http.post("http://localhost:3000/panier", data)
-
+  cookieToPanier(data:IPanier){
+    console.log(data)
+     return this.http.post("http://localhost:3000/panier", data)
   }
+
+  getPanier(){
+    return this.http.get<Array<IPanier>>("http://localhost:3000/panier")
+  }
+
 
   /*// Récupérer un cookie dans la liste à partir de son id
   getCookiesByID(id : unknown): ICookie | undefined{
