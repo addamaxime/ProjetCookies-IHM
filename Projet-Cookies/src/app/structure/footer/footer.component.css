@@ -1,15 +1,27 @@
-.footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background: url('/assets/datas/cookies-bg.jpeg');
-    height: 105px;
+.page-footer{
+    font-family: 'system-ui';
+    font-size: 18px;
+    color : #683d13;
+    background-color: #FED59C;
 }
 
-.text-bg{
-    text-align: center;
-    padding-top: 45px;
-    color: white;
-    font-weight: bold;
-    
+.page-footer a {
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.adresse_infos p {
+    margin-bottom: 0px!important;
+}
+
+.copyright{
+    font-size: 15px;
+}
+
+.copyright hr{
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
 }

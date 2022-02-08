@@ -19,6 +19,11 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navbarOpen = false;
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
   
 
 }

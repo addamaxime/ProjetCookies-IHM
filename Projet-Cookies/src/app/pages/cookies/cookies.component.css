@@ -1,42 +1,23 @@
-article{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    border: 3px inset brown;
-    border-radius: 30px;
-}
-img{
-    width : 350px;
-    height : 300px;
-}
-
-.cookie_infos{
-    text-align: center;
+.pagination{
+    padding-bottom: 50px;
+    width : 100%
 }
 
 .btn-primary{
-    background-color: brown;
-    border-color : black;
-}
-
-.pagination{
-    padding-bottom: 50px;
+    background-color: #894C30;
+    border-color : #894C30;
 }
 
 .btn-secondary{
-    width: 150px;
+    width: 70%;
     font-size: 22px;
     background-color: #894C30;
-    margin-bottom: 10px;
 }
 
-.recette{
-    margin-bottom: 30px;
-}
 
-.block{
-    margin-bottom: 30px;
-    font-size: 22px;
+.ingrediients{
+    font-size: 18px;
+    margin-top: 10px;
 
 }
 
@@ -47,3 +28,21 @@ img{
 .btn_panier{
     background-color: #E77A48!important;
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align : center;
+}
+
+.titre{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color : #7F5215;
+}
+
+

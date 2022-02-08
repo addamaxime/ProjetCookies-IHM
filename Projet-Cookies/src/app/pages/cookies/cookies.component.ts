@@ -16,7 +16,7 @@ import { UsersService } from 'src/app/utils/services/users.service';
 
 export class CookiesComponent implements OnInit {
 
-  page: any = { debut: 0, ecart: 4 };
+  page: any = { debut: 0, ecart: 6 };
   position: number = 0;
   filtreCookie: string = '';
   listeCookies: Array<ICookie> = [];
