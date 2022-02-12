@@ -3,17 +3,22 @@
 <section>
     <div class="container">
         <article *ngFor="let c of cookieServ.listeCookies | slice:page.debut:page.debut+page.ecart"
-            class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
 
             <img class="img-fluid" src={{c.photo}}>
             <h3>{{c.name}} </h3>
             <p>Prix : {{c.prix}}€</p>
+
+            <div>
+                <button class="btn-panier" *ngIf="statutServ.connexion" (click)=addCookieToPanier(c)>
+                    <i class='fa fa-shopping-cart fa-lg' style='color:#683c10'></i>
+                </button>
+            </div>
+
             <button (click)="changeRecetteShow(c)" class="btn btn-secondary btn-lg">{{getButtonText(c)}}</button>
-            <button *ngIf="statutServ.connexion" (click)=addCookieToPanier(c)
-                class="btn btn-secondary btn-lg btn_panier"> Ajouter au panier</button>
             <div class="recette" *ngIf="getRecetteShow(c) ; then ifBlock else elseBlock"></div>
             <ng-template #ifBlock>
-                <div class="ingrediients">Ingrédients : {{c.recette}} </div>
+                <div class="ingredients">{{c.recette}} </div>
             </ng-template>
 
             <ng-template #elseBlock>
@@ -23,9 +28,9 @@
 
         <div class="d-flex justify-content-center pagination">
             <button [disabled]="lockButtonBefore()" (click)="pagination(-1)" class="btn btn-primary btn-lg">
-                < </button>
+                Précedent </button>
                     <button [disabled]="lockButtonNext(cookieServ.listeCookies)" (click)="pagination(1)"
-                        class="btn btn-primary btn-lg"> > </button>
+                        class="btn btn-primary btn-lg"> Suivant </button>
         </div>
     </div>
 </section>

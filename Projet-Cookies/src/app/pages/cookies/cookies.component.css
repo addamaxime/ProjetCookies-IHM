@@ -3,6 +3,12 @@
     width : 100%
 }
 
+.pagination button {
+    width : 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .btn-primary{
     background-color: #894C30;
     border-color : #894C30;
@@ -10,13 +16,15 @@
 
 .btn-secondary{
     width: 70%;
-    font-size: 22px;
+    font-size: 18px;
     background-color: #894C30;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 
-.ingrediients{
-    font-size: 18px;
+.ingredients{
+    font-size: 14px;
     margin-top: 10px;
 
 }
@@ -25,8 +33,9 @@
     margin-bottom: 65px;
 }
 
-.btn_panier{
-    background-color: #E77A48!important;
+.btn-panier{
+    border-style: none;   
+    background-color: transparent;
 }
 
 .container{

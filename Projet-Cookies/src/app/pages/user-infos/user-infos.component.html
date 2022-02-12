@@ -1,16 +1,18 @@
-<h1 style="text-align: center; padding-top: 20px;">Voici vos informations personnelles</h1>
-<div class="infos">
+<div class="page">
+    <h1>Voici vos informations personnelles</h1>
+    <div class="infos">
 
-    <div class="article">
-        <section>
-            <div class="d-flex justify-content-around">
-                <div class="user_infos">
-                    <img src="/assets/datas/avatar.png">
-                    <h3>Pseudo : {{user?.username}}</h3>
-                    <h3>Email : {{user?.email}}</h3>
-                    <h3>Nom : {{user?.name}}</h3>
+        <div class="article">
+            <section>
+                <div class="d-flex justify-content-around">
+                    <div class="user_infos">
+                        <i class='fa fa-user fa-2xl' style='color:#683d13'></i>
+                        <h3>Pseudo : {{user?.username}}</h3>
+                        <h3>Email : {{user?.email}}</h3>
+                        <h3>Nom : {{user?.name}}</h3>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 </div>

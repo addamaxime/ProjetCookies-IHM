@@ -6,6 +6,7 @@ import { AuthentificationService } from 'src/app/utils/services/authentification
 import { CookiesService } from 'src/app/utils/services/cookies.service';
 import { StatutService } from 'src/app/utils/services/statut.service';
 import { UsersService } from 'src/app/utils/services/users.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cookies',
@@ -16,7 +17,7 @@ import { UsersService } from 'src/app/utils/services/users.service';
 
 export class CookiesComponent implements OnInit {
 
-  page: any = { debut: 0, ecart: 6 };
+  page: any = { debut: 0, ecart: 8 };
   position: number = 0;
   filtreCookie: string = '';
   listeCookies: Array<ICookie> = [];
@@ -91,6 +92,14 @@ export class CookiesComponent implements OnInit {
   }
   addCookieToPanier(cookie: ICookie) {
     let IdUserFindedWithEmail = this.getOneUserWithMail()
+
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Votre cookie a été ajouté au panier !',
+      showConfirmButton: false,
+      timer: 1200
+    })
     
     let panier:IPanier= {
       id_cookie: Number(cookie.id),
