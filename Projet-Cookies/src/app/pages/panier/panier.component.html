@@ -1,12 +1,12 @@
-<h3 style="text-align: center;">Votre panier</h3>
+<h3 class="titre">Votre panier</h3>
 
 
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">Photo</th>
+            <th scope="col">Aperçu</th>
             <th scope="col">Cookie</th>
-            <th scope="col">Prix unitaire</th>
+            <th scope="col">Prix</th>
         </tr>
     </thead>
     <tbody>
@@ -14,11 +14,18 @@
             <th><img src={{c.photo_cookie}}></th>
             <th>{{c.name_cookie}}</th>
             <th>{{c.price_cookie}}€</th>
+            <th> <i (click)="supprimerCookie(c)" class="fa fa-trash" style="font-size:30px;color:red;"></i></th>
         </tr>
+
+        <th></th>
+        <th></th>
+        <th>Prix total : {{totalPrix()}} €</th>
+
+
     </tbody>
 
 </table>
 
 <div class="btn_payer">
-    <input class="btn btn-primary btn_payer" (click)="alertClick()" type="submit"  value="Procéder au paiement">
+    <input class="btn btn-primary btn_payer" (click)="alertClick()" type="submit" value="Procéder au paiement">
 </div>

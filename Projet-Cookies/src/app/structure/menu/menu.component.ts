@@ -3,6 +3,7 @@ import { AuthentificationService } from 'src/app/utils/services/authentification
 import { StatutService } from 'src/app/utils/services/statut.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from 'src/app/pages/login/login.component';
+import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-menu',
@@ -10,7 +11,7 @@ import { LoginComponent } from 'src/app/pages/login/login.component';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
+  faShoppingBasket = faShoppingBasket;
   constructor(
     public statutServ : StatutService,
     public authServ: AuthentificationService,

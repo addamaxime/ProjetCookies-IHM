@@ -8,9 +8,25 @@
 }
 
 .btn_payer{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px!important;
+    font-size: 20px!important;
+    background-color: #894C30;
+    border-color : #894C30;
+    text-align:center;
+    border-radius: 0.3rem;
+
 }
 
+.titre{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color : #7F5215!important;
+    font-size: 28px;
+}
+
+.table{
+    color : #7F5215;
+
+}

@@ -4,6 +4,7 @@
 
     <div class="image-brand">
         <img src="/assets/datas/logos/logo_grand.svg">
+        <a class="nav-link panier" *ngIf="statutServ.connexion" routerLink="/panier"><fa-icon class="faShoppingBasket img_basket" [icon]="faShoppingBasket"></fa-icon>Panier</a>
     </div>
 
     <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
@@ -30,12 +31,11 @@
                     <a class="nav-link" *ngIf="statutServ.connexion" (click)="authServ.logOut()"
                         routerLinkActive="selected-item" routerLink="/login">Déconnexion</a>
                 </li>
+
                 <!-- <li class="nav-item">
                     <a class="nav-link" *ngIf="!statutServ.connexion" routerLinkActive="selected-item" routerLink="/register">Inscription</a>
                 </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link" *ngIf="!statutServ.connexion" routerLink="/register">Qui sommes nous ? </a>
-                </li> -->
+
             </ul>
         </div>
     </div>

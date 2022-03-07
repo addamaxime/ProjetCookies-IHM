@@ -7,6 +7,10 @@
 
 }
 
+.faShoppingBasket{
+    color : #683d13;
+}
+
 .image-brand{
     display: flex;
 }
@@ -57,6 +61,13 @@
         display: table;
         text-align: center;
    }
+}
+
+.panier{
+    color: #683d13!important;
+}
+.img_basket{
+    margin-right: 7px;
 }
 
 
