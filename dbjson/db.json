@@ -3,51 +3,86 @@
     {
       "id": 0,
       "name": "Chocolat blanc",
-      "recette": "Chocolat blanc",
+      "recette": "Une recette classique et délicieuse, pour les fans de chocolat blanc !",
       "prix": "3",
-      "photo": "/assets/datas/chocolat_blanc.jpg"
+      "photo": "/assets/datas/0-chocolat_blanc.jpg"
     },
     {
       "id": 1,
       "name": "Chocolat coco",
-      "recette": "Chocolat et noix de coco",
+      "recette": "Avec sa coco râpée BIO qui fond dans la bouche et la puissance de son cacao, vous ne résisterez pas !",
       "prix": "3",
-      "photo": "/assets/datas/chocolat_coco.jpg"
+      "photo": "/assets/datas/1-chocolat_coco.jpg"
     },
     {
       "id": 2,
       "name": "Chocolat au lait",
-      "recette": "Chocolat au lait",
+      "recette": "Pour les fans de la célèbre pâte à tartiner ! Les noisettes torréfiées et concassées se mêlent aux généreuses pépites de chocolat au lait.",
       "prix": "3",
-      "photo": "/assets/datas/chocolat_lait.jpg"
+      "photo": "/assets/datas/2-chocolat_lait.jpg"
     },
     {
       "id": 3,
-      "name": "Chocolat au lait + banane",
-      "recette": "Chocolat au lait et banane",
+      "name": "Chocolat banane",
+      "recette": "Une recette qui vous rappellera les saveurs du Banana Split !",
       "prix": "3",
-      "photo": "/assets/datas/chocolat_lait_banane.jpg"
+      "photo": "/assets/datas/3-chocolat_lait_banane.jpg"
     },
     {
       "id": 4,
       "name": "Chocolat noir",
-      "recette": "Chocolat noir",
+      "recette": "Pourquoi aller chercher midi à 14h ? ... Le chocolat noir, c'est la base !",
       "prix": "3",
-      "photo": "/assets/datas/chocolat_noir.jpg"
+      "photo": "/assets/datas/4-chocolat_noir.jpg"
     },
     {
       "id": 5,
       "name": "Chocolat noisette",
-      "recette": "Chocolat noisette",
+      "recette": "Fans de noisette ? Goûtez-les, conseil d'ami.",
       "prix": "3",
-      "photo": "/assets/datas/chocolat_noisette.jpg"
+      "photo": "/assets/datas/5-chocolat_noisette.jpg"
     },
     {
       "id": 6,
       "name": "Chocolat praline",
-      "recette": "Chcolat praline",
+      "recette": "Pink cookies réalisés à base de pralines roses concassées, originaires de Lyon !",
       "prix": "3",
-      "photo": "/assets/datas/chocolat_praline.jpg"
+      "photo": "/assets/datas/6-chocolat_praline.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Caramel d'Isigny",
+      "recette": "Le chouchou de La Fabrique ! Les pépites de caramel se mêlent au côté iodé du sel de Guérande... A se damner !",
+      "prix": "3",
+      "photo": "/assets/datas/7-beurre_sale.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Chocolat noir bio",
+      "recette": "Notre best-seller en version Bio !",
+      "prix": "3",
+      "photo": "/assets/datas/8-bio.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Citron meringue",
+      "recette": "Recette raffinée et rafraichissante. La tester, c'est l'adopter!",
+      "prix": "3",
+      "photo": "/assets/datas/9-citron_meringue.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Dulce de leche",
+      "recette": "Autrement dit 'à la confiture de lait'. Une douceur à laquelle vous ne saurez résister :)",
+      "prix": "3",
+      "photo": "/assets/datas/10-cookie_dulce.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Thé matcha",
+      "recette": "Un green cookie aux délicieuses notes de thé matcha (bio qui plus est !), le fameux thé vert importé du Japon.",
+      "prix": "3",
+      "photo": "/assets/datas/11-the_matcha.jpg"
     }
   ],
   "users": [
@@ -96,6 +131,213 @@
       "id_username": 2,
       "mail_username": "test@test.fr",
       "id": 2
+    },
+    {
+      "id_cookie": 2,
+      "name_cookie": "Chocolat au lait",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/2-chocolat_lait.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 3
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 4
+    },
+    {
+      "id_cookie": 3,
+      "name_cookie": "Chocolat banane",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/3-chocolat_lait_banane.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 5
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 6
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 7
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 8
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 9
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 10
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 11
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 12
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 13
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 14
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 15
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 16
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 17
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 18
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 19
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 20
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 21
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 22
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 23
+    },
+    {
+      "id_cookie": 2,
+      "name_cookie": "Chocolat au lait",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/2-chocolat_lait.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 24
+    },
+    {
+      "id_cookie": 1,
+      "name_cookie": "Chocolat coco",
+      "price_cookie": "3",
+      "photo_cookie": "/assets/datas/1-chocolat_coco.jpg",
+      "id_username": 2,
+      "mail_username": "test@test.fr",
+      "id": 25
     }
   ]
 }

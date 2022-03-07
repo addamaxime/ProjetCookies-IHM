@@ -23,6 +23,7 @@ import { AdminUsersComponent } from './pages/admin/admin-users/admin-users.compo
 import { UserInfosComponent } from './pages/user-infos/user-infos.component';
 import { ForbiddenComponent } from './pages/forbidden/forbidden.component';
 import { PanierComponent } from './pages/panier/panier.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 //import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
@@ -52,7 +53,8 @@ import { PanierComponent } from './pages/panier/panier.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

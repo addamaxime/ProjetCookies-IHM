@@ -3,6 +3,7 @@
     font-size: 13px;
     color : #683d13;
     background-color: #FED59C;
+    padding-top: 10px!important;
 }
 
 .page-footer a {
@@ -49,9 +50,19 @@ p{
     margin-bottom: 10px;
 }
 
-footer{
+@media (min-width: 768px) {
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+  }
 
-}
+
 
 ::placeholder {
     color: #683d13;

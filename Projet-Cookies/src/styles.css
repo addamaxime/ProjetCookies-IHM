@@ -12,3 +12,31 @@ body {
 .swal2-html-container{
   font-size: 25px!important;
 }
+
+.swal2-styled.swal2-confirm {
+  background-color : #A0522D!important;
+}
+
+.mat-form-field-label {
+  caret-color: #A0522D!important;
+  color :#A0522D!important;
+
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  caret-color: #A0522D!important;
+  color :#A0522D!important;
+}
+
+mat-form-field-appearance-legacy .mat-hint {
+  caret-color: #A0522D!important;
+  color :#A0522D!important;
+}
+
+
+
+@media (min-width: 768px) {
+  .container{
+    margin-bottom : 150px
+  }
+}

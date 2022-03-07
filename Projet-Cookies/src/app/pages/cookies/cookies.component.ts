@@ -7,6 +7,7 @@ import { CookiesService } from 'src/app/utils/services/cookies.service';
 import { StatutService } from 'src/app/utils/services/statut.service';
 import { UsersService } from 'src/app/utils/services/users.service';
 import Swal from 'sweetalert2';
+import { faEye } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-cookies',
@@ -21,7 +22,9 @@ export class CookiesComponent implements OnInit {
   position: number = 0;
   filtreCookie: string = '';
   listeCookies: Array<ICookie> = [];
-  user: any
+  user: any;
+  faEye = faEye;
+
 
 
 
@@ -88,7 +91,7 @@ export class CookiesComponent implements OnInit {
           return a.email === this.authServ.decrypt(localStorage.getItem('loggedUser'))
         })
       })
-      return this.user?.id
+    return this.user?.id
   }
   addCookieToPanier(cookie: ICookie) {
     let IdUserFindedWithEmail = this.getOneUserWithMail()
@@ -98,18 +101,19 @@ export class CookiesComponent implements OnInit {
       icon: 'success',
       title: 'Votre cookie a été ajouté au panier !',
       showConfirmButton: false,
-      timer: 1200
+      timer: 1200,
+      color: '#7F5215',
     })
-    
-    let panier:IPanier= {
+
+    let panier: IPanier = {
       id_cookie: Number(cookie.id),
-      name_cookie:cookie.name,
-      price_cookie:cookie.prix,
-      photo_cookie:cookie.photo,
+      name_cookie: cookie.name,
+      price_cookie: cookie.prix,
+      photo_cookie: cookie.photo,
       id_username: Number(IdUserFindedWithEmail),
-      mail_username:this.authServ.decrypt(localStorage.getItem('loggedUser'))
+      mail_username: this.authServ.decrypt(localStorage.getItem('loggedUser'))
     }
-    this.cookieServ.cookieToPanier(panier).subscribe((result)=>{
+    this.cookieServ.cookieToPanier(panier).subscribe((result) => {
     })
   }
 
