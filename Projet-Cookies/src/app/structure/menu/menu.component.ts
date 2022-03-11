@@ -4,6 +4,7 @@ import { StatutService } from 'src/app/utils/services/statut.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from 'src/app/pages/login/login.component';
 import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -15,6 +16,7 @@ export class MenuComponent implements OnInit {
   constructor(
     public statutServ : StatutService,
     public authServ: AuthentificationService,
+    public router: Router
   ) { }
 
   ngOnInit(): void {
@@ -23,6 +25,12 @@ export class MenuComponent implements OnInit {
   navbarOpen = false;
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+  }
+
+  changePageAndReload(){
+    this.router.navigate(['/cookies']).then(() => {
+      window.location.reload();
+    });
   }
 
   

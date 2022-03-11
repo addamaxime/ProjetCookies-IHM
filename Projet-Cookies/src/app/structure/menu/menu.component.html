@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="selected-item" routerLink="/cookies">Nos cookies </a>
+                    <a class="nav-link" routerLinkActive="selected-item" (click)='changePageAndReload()'>Nos cookies </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" *ngIf="statutServ.connexion" routerLinkActive="selected-item"
@@ -31,10 +31,6 @@
                     <a class="nav-link" *ngIf="statutServ.connexion" (click)="authServ.logOut()"
                         routerLinkActive="selected-item" routerLink="/login">Déconnexion</a>
                 </li>
-
-                <!-- <li class="nav-item">
-                    <a class="nav-link" *ngIf="!statutServ.connexion" routerLinkActive="selected-item" routerLink="/register">Inscription</a>
-                </li> -->
 
             </ul>
         </div>

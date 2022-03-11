@@ -37,6 +37,7 @@ export class CookiesComponent implements OnInit {
 
 
   ngOnInit(): void {
+    
     this.getOneUserWithMail()
   }
 
