@@ -10,3 +10,33 @@ img {
     max-width: 100%;
     height: auto;
   }
+
+.qui{
+    text-align: center;
+    font-size: 15px;
+}
+
+b{
+    color : #7F5215
+}
+
+.qui_title{
+    color: #7F5215!important;
+    font-size: 24px;
+    font-family: 'system-ui';
+    font-weight: 500;
+}
+
+.col-sm-12{
+    margin-bottom: 15px;
+}
+
+.col-md-12 {
+    margin-bottom: 30px;
+}
+
+.col-lg-6{
+    margin-top: 70px;
+}
+
+.chef{}

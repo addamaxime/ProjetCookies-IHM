@@ -101,6 +101,14 @@
       "password": "U2FsdGVkX189620yzSL70Vs0mvm+poNrlcSmrqWZU2M=",
       "passwordConfirm": "U2FsdGVkX189620yzSL70Vs0mvm+poNrlcSmrqWZU2M=",
       "id": 2
+    },
+    {
+      "name": "Maxime",
+      "username": "maxime64",
+      "email": "maxime@maxime.fr",
+      "password": "U2FsdGVkX1/cyPAbHPC5KwHZ+qwBEqGYOV19Rj8AXjY=",
+      "passwordConfirm": "U2FsdGVkX1/cyPAbHPC5KwHZ+qwBEqGYOV19Rj8AXjY=",
+      "id": 3
     }
   ],
   "admin": [

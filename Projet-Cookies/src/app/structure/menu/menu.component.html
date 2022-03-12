@@ -1,9 +1,9 @@
 <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
 
-<nav class="custom-navbar navbar navbar-expand-lg navbar-light">
+<nav class="custom-navbar navbar navbar-expand-lg navbar-light sticky-top">
 
     <div class="image-brand">
-        <img src="/assets/datas/logos/logo_grand.svg">
+        <img (click)='goHomePage()' src="/assets/datas/logos/logo_grand.svg">
         <a class="nav-link panier" *ngIf="statutServ.connexion" routerLink="/panier"><fa-icon class="faShoppingBasket img_basket" [icon]="faShoppingBasket"></fa-icon>Panier</a>
     </div>
 

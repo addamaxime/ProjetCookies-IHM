@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
   faShoppingBasket = faShoppingBasket;
   constructor(
-    public statutServ : StatutService,
+    public statutServ: StatutService,
     public authServ: AuthentificationService,
     public router: Router
   ) { }
@@ -27,12 +27,13 @@ export class MenuComponent implements OnInit {
     this.navbarOpen = !this.navbarOpen;
   }
 
-  changePageAndReload(){
+  changePageAndReload() {
     this.router.navigate(['/cookies']).then(() => {
       window.location.reload();
     });
   }
 
-  
-
+  goHomePage() {
+    this.router.navigate([''])
+  }
 }

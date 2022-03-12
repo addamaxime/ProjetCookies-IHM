@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 })
 export class FooterComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
@@ -22,6 +23,10 @@ export class FooterComponent implements OnInit {
     }
     )
     
+  }
+
+  mentions(){
+    window.location.href = ("https://lafabrique-cookies.fr/fr/content/2-mentions-legales")
   }
 
 }
